@@ -4,6 +4,8 @@ const fallback = require('express-history-api-fallback');
 const config = require('./src/config.js');
 const logger = require('./src/logger.js');
 
+const cors = require('cors');
+
 const app = express();
 app.enable('trust proxy');
 app.use(logger.log4js.connectLogger(logger.getLogger('express'), {level: 'auto'}));
@@ -18,6 +20,7 @@ app.listen(config.app.port, function () {
 
 Promise.resolve()
   .then(() => {
+    app.use(cors());
     app.use('/api', require('./api/index.js'));
     logger.info('REST API attached to `/api` route');
     app.use(fallback('index.html', { root }));
