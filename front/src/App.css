@@ -36,3 +36,67 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.game-row {
+  display: flex;
+}
+.game-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.score-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.moves-count {
+  width: 500px;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+}
+td, th {
+  width: 50%;
+  border: 1px solid black;
+}
+.games-count {
+  width: 500px;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+}
+.games-count td, .games-results th {
+  width: 33%;
+}
+.games-results {
+  width: 50%;
+}
+.reset-game {
+  margin: 10px 0;
+}
+.result-msg {
+  color: blueviolet;
+  font-size: large;
+  margin: 10px 0;
+  text-align: center;
+}
+.field {
+  width: 40px;
+  height: 40px;
+  background-color: #00EEE0;
+  border: 1px #99ccff solid;
+  line-height: 40px;
+  text-align: center;
+}
+.game-log span {
+  padding: 5px;
+}
+.field:hover, .field-highlight
+{
+  background-color: #ee6c17;
+  border: 1px #3cff1d solid;
+  cursor: pointer;
+}
