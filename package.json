@@ -25,7 +25,7 @@
     "moment": "^2.19.1",
     "nicnacno": "^2.0.2",
     "nocache": "^2.0.0",
-    "node-fetch": "^1.7.3",
+    "node-fetch": "^2.6.1",
     "tictactoe-agent": "^2.1.2"
   }
 }
